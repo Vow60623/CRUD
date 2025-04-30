@@ -9,7 +9,7 @@ function View() {
         viewdata();
     },[])
     const viewdata=async()=>{
-        const res=await axios.get('http://localhost:9000/users');
+        const res=await axios.get('https://backend-rm2s.onrender.com/users');
         console.log(res);
         setUsers(res.data);
     }
